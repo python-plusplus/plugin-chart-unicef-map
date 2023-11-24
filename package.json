@@ -23,9 +23,8 @@
     "esm",
     "lib"
   ],
-  "dependencies": { 
-  },
   "peerDependencies": {
+    "csvtojson": "^2.0.10",
     "@superset-ui/chart-controls": "*",
     "@superset-ui/core": "*",
     "@testing-library/dom": "^7.29.4",
@@ -40,5 +39,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "file-loader": "^6.2.0"
+  },
+  "devDependencies": {
+    "csv-loader": "^3.0.5"
   }
 }

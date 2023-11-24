@@ -6,7 +6,10 @@
   },
   "exclude": ["lib", "test"],
   "extends": "../../tsconfig.json",
-  "include": ["src/**/*", "types/**/*", "../../types/**/*"],
+  //Added node_modules to included types since we're using require.context in control panel
+  //This might get problematic once you try to install the plugin on a fresh install of superset,
+  //so be wary and see if you might need to add anything to the ts config on superset-frontend
+  "include": ["src/**/*", "types/**/*", "../../types/**/*", "node_modules"],
   "references": [
     {
       "path": "../../packages/superset-ui-chart-controls"

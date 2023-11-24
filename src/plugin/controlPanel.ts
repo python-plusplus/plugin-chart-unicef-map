@@ -135,7 +135,7 @@ const config: ControlPanelConfig = {
             choices: formatSelectOptions(['World', 'Country']),
             description: t("What's the scope of the map you want to display?"),
             valdiators: [validateNonEmpty],
-            rerender: ['select_country']
+            // rerender: ['select_country']
           }
         }], 
         // [
